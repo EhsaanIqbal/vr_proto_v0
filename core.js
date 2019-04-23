@@ -25,7 +25,7 @@ function startApp(userId) {
             rotation: "0 0 0",
             color: "#373737",
             depth: "1",
-            height: "1",
+            height: "15",
             width: "1"
         }
     };
