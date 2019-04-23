@@ -12,7 +12,7 @@ ably.connection.once('connected', function () {
 })
 
 function startApp(userId) {
-    var x = Math.random() * (20 - (-20)) + (-20);
+    var x = Math.random() * 10;
     var y = 0;
     var z = 0;
     var initialPosition = { x: x, y: y, z: z };
@@ -25,7 +25,7 @@ function startApp(userId) {
             rotation: "0 0 0",
             color: "#373737",
             depth: "1",
-            height: "15",
+            height: "1",
             width: "1"
         }
     };
