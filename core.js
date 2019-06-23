@@ -1,15 +1,18 @@
 var avatars = {};
 var VRchannel;
 var myId;
-
+var status = document.getElementById('ast').innerHTML("ddd");
 var ably = new Ably.Realtime({
   authUrl: '/auth',
   echoMessages: false
 });
 ably.connection.once('connected', function () {
     myId = ably.auth.tokenDetails.clientId;
+console.log(ably.auth.clientId +'has just joined');
+
     startApp(myId)
 })
+
 
 function startApp(userId) {
     var x = Math.random() * 10;
